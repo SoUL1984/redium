@@ -1,0 +1,19 @@
+<template>
+    <p>
+        Many systems, either it's a small website or a big enterprise system, that are in use nowadays are pretty outdated and are not able to cope up with requirements for speed of response, modern design trends or user experience. Customers want not only the reliable system to use, but also easy to use one. The process of re-building an outdated system can be pretty tricky. Changing the way how it looks like it's important to preserve the way how it operates and behaves in terms of business requirements.
+        <br>
+        At Redium we provide such an opportunity to our both existing and new clients. Keeping the business value of the system at the same level, we improve its look and feel in addition to improvements on the technical size that will make the system faster and more maintainable. Talk to us today to see what we can do for you and how it can benefit your business.
+    </p>
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style scoped>
+
+</style>
+
+

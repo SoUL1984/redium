@@ -6,7 +6,6 @@
     <br>
 	Redium can offer both a great team and latest technologies. Our clients are participating the process of making web systems for their business on all stages thus they know exactly what to expect. We understand that in such rapidly changing environment clients sometimes need to change their requirements on the fly to adjust to market and its latest trends. With us it is not a problem. Our modern project management methodologies allow our clients to change their mind at any stage of the project. We build for you what you want, not what you though when we started the project.
     </p>
-
 </template>
 
 <script>

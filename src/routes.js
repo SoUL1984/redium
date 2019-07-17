@@ -12,39 +12,46 @@ import WMD from './pages/WebMobileDesign.vue'
 export default new VueRouter({
     routes:[
         {
-           path:'', //localhost:8080
+           path:'/', //localhost:8080
+           name: 'Application Development',
            component: AD
         },
         {
             path:'/MaintenanceSupport', 
+            name: 'Maintenance and Support',
             component: MS
          },
          {
             path:'/MobileDevelopment', 
+            name: 'Mobile Development',
             component: MD
          },
          {
-            path:'/SoftwareRe-engineering', 
+            path:'/SoftwareRe-engineering',
+            name: 'Software Re-engineering',
             component: SR
          },
          {
             path:'/SoftwareTestingQualityAssurance', 
+            name:'Software Testing and Quality Assurance',
             component: STQA
          },
          {
-            path:'/TechnicalUserDoc', 
+            path:'/TechnicalUserDoc',
+            name:'Technical and User Documentation',
             component: TUD
          },
          {
-            path:'/WebDevelopment', 
+            path:'/WebDevelopment',
+            name: 'Web Development', 
             component: WD
          },
          {
             path:'/WebMobileDesign', 
+            name:'Web and Mobile Design',
             component: WMD
          }
     ],
     mode: 'history'
-
-
+    
 })

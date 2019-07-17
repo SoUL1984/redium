@@ -17,47 +17,39 @@
             <div class="StyleRouterMenu">  
                 <h1>Our Services</h1> 
                 <ul class="nav flex-column">
-                    <router-link tag="li" class="nav-item" exact to="/" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Application Development</a>
-                    </router-link>
-                    <router-link tag="li" class="nav-item" to="/MobileDevelopment" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Mobile Development</a>
-                    </router-link>
-                    <router-link tag="li" class="nav-item" to="/WebDevelopment" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Web Development</a>
-                    </router-link>
-                    <router-link tag="li" class="nav-item" to="/WebMobileDesign" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Web and Mobile Design</a>
-                    </router-link>
-                    <router-link tag="li" class="nav-item" to="/SoftwareTestingQualityAssurance" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Software Testing and Quality Assurance</a>
-                    </router-link>
-                    <router-link tag="li" class="nav-item" to="/TechnicalUserDoc" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Technical and User Documentation</a>
-                    </router-link>
-                    <router-link tag="li" class="nav-item" to="/MaintenanceSupport" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Maintenance and Support</a>
-                    </router-link>
-                    <router-link tag="li" class="nav-item" to="/SoftwareRe-engineering" active-class="active">
-                        <a style="font-size:25px;" class="nav-link">Software Re-engineering</a>
+                    <router-link tag="li" class="nav-item" exact v-for="route in this.$router.options.routes" :key="route.path" :to="route.path" active-class="active">
+                        <a style="font-size:25px;" class="nav-link">{{route.name}}</a>
                     </router-link>
                 </ul>
             </div>
+            <!-- <div style={{imageUrl}}  class="StyleRoterView"> -->           
             <div class="StyleRoterView">
+            <!-- <div>  -->
                  <router-view/>
             </div>     
         </div>
     </div>
-</template>
+</template> 
 
 <script>
 export default {
-   
-
+    // computed: {
+    //     imageUrl: function() {
+    //         return 'background-image:url(../img/'+this.$router.options.routes[0].path+');';
+    //     }
+    // }
 }
 </script>
 
 <style>
+
+      /* .bgImgCenter{
+         background-image: url('/img/About_BG.svg');
+         background-repeat: no-repeat;
+         background-position: center; 
+         position: relative;
+      } */
+
     html, body {
         margin: 0;
         background: #141726;

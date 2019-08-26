@@ -35,10 +35,10 @@
                         <img src="../src/img/redium_logo.svg" alt="">
                     </div>
                     <nav class="nav">
-                        <a style="font-size:18px;" class="nav-link" href="#">About Us</a>
-                        <a style="font-size:18px;" class="nav-link" href="#">Services</a>
-                        <a style="font-size:18px;" class="nav-link" href="#">Our Work</a>
-                        <a style="font-size:18px;" class="nav-link" href="#">Contact</a>                        
+                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#">Our Work</a>
+                        <a class="nav-link" href="#">Contact</a>                        
                     </nav>
                 </div>
             </div>
@@ -106,8 +106,8 @@
                  <h1>Contact Us</h1>
                  <p>Get an idea for your project? Call or email us to get a free non obligatory quote today.</p>
                  <div class="aboutUs_contact">
-                    <img src="../src/img/mailicon.svg" alt="">info@redium.co.nz<br><br>
-                    <img src="../src/img/phoneicon.svg" alt="">+64224357815
+                    <img src="../src/img/mailicon.svg" alt="">&nbsp;&nbsp;&nbsp;info@redium.co.nz<br><br>
+                    <img src="../src/img/phoneicon.svg" alt="">&nbsp;&nbsp;&nbsp;+64224357815
                  </div> 
                 <p style="color:#E8EAF1;font-size:20px; padding-bottom:0;margin-bottom:8px;">We are on social media</p>
                  <div class="social">
@@ -138,16 +138,16 @@
                         <img src="../src/img/Redium_Logo_White.svg" alt="">
                     </div>
                     <nav class="nav">
-                        <a style="font-size:18px;" class="nav-link" href="#">About Us</a>
-                        <a style="font-size:18px;" class="nav-link" href="#">Services</a>
-                        <a style="font-size:18px;" class="nav-link" href="#">Our Work</a>
-                        <a style="font-size:18px;" class="nav-link" href="#">Contact</a>                        
+                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#">Our Work</a>
+                        <a class="nav-link" href="#">Contact</a>                        
                     </nav>
                 </div>
                 <div class="footer_menu_right">
-                    <div class="footer_menu_right__item"><img src="../src/img/phoneicon.svg" alt=""> Call Us</div>  
-                    <div class="footer_menu_right__item"><img src="../src/img/mailicon.svg" alt=""> Email Us</div>  
-                    <div class="footer_menu_right__item"><img src="../src/img/googlemapsicon.svg" alt=""> Find Us On Google Maps</div>  
+                    <div class="footer_menu_right__item"><img src="../src/img/phoneicon.svg" alt="">&nbsp;&nbsp;&nbsp;Call Us</div>  
+                    <div class="footer_menu_right__item"><img src="../src/img/mailicon.svg" alt="">&nbsp;&nbsp;&nbsp;Email Us</div>  
+                    <div class="footer_menu_right__item"><img src="../src/img/googlemapsicon.svg" alt="">&nbsp;&nbsp;&nbsp;Find Us On Google Maps</div>  
                 </div>
             </div>
 
@@ -166,8 +166,20 @@ export default {
     html, body {
         margin: 0;
         background: #141726;
-        font-family: 'Gotham Pro', Regular;
+        font-family: "GothamProRegular";
         font-size: 20px;
+    }
+
+    .container{
+        width:100%;
+        height: 1080px;
+        /* max-height: 1080px;  */
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0;
+        background: #FFFFFF;
+        /* padding-left: 128px; */
+        /* padding-right: 128px; */
     }
 
     h1 {
@@ -176,7 +188,9 @@ export default {
         padding-bottom: 40px;
         /* padding-left: 20px; */
         margin: 0;
-        font-family: 'Gotham Pro';
+        font-family: "GothamProRegular";
+        font-weight: bold;
+
     }
 
     h1.ab{
@@ -184,6 +198,8 @@ export default {
         color:#141726; 
     }
 
+    /* Our Work
+    ===================================*/
     h1.oWork{
         text-align: right;
         color:#141726; 
@@ -193,14 +209,16 @@ export default {
         padding-right: 7%;
     }
 
-    .container{
-        width:100%;
-        height: 1080px;
-        /* max-height: 1080px; */
-        max-width: 1920px;
-        margin: 0 auto;
-        padding: 0;
-        background: #FFFFFF;
+    .ourWork{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        background:#FFFFFF;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top:0px;
+        padding-bottom: 180px;
     }
 
     .about{
@@ -214,23 +232,16 @@ export default {
         font-size: 25px;    
     }
 
-    .ourWork{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        background:#FFFFFF;
-        padding-left: 7%;
-        padding-right: 7%;
-        padding-top:0px;
-        /* padding-bottom: 250px; */
-    }
-
     .container_menu{
         width:100%;
         margin: 0;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 
+
+    /* Header
+    ===================================*/
     .header{
         position: absolute;
         width: 100%;
@@ -257,17 +268,10 @@ export default {
 	    width: 170px;
     }
 
-    .intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 1080px;
-        padding-top: 120px;
-        background:#141726
-        url("img/main_bg.svg") 
-        center no-repeat /cover;
-    }
 
+
+    /* About Us
+    ===================================*/
     .aboutUs {
         height: 100%;
         background:#141726
@@ -276,8 +280,9 @@ export default {
         color: #FFFFFF;
         font-size: 25px;
         padding-top: 240px;
-        padding-right: 128px;
-        padding-left: 128px;
+        padding-right: 7%;
+        padding-left: 7%;
+        /* padding-bottom: 00px; */
     }
 
     .aboutUs_contact{
@@ -309,10 +314,24 @@ export default {
         fill: #E8EAF1;
     }
 
+
+    /* Intro
+    ===================================*/
+    .intro {
+        display: flex;
+        background:#141726
+        url("img/main_bg.svg") 
+        center no-repeat /cover;
+        height: 1080px;
+        padding-left: 10.8%;
+        padding-right: 12.2%;
+    }
+
     .intro__img{
-        padding-left: 10%;
-        padding-bottom: 20%;
-        width: 90%;
+        align-items:center;
+        /* padding: auto; */
+        width: 100%; 
+        max-width: 1480px;
     }
 
 
@@ -341,7 +360,7 @@ export default {
     }
 
     .StyleRouterView{
-        /* display: flex;  */
+        /* display: flexx;  */
         float: right; 
         width: 60%;
         background: #E8EAF1;
@@ -370,6 +389,9 @@ export default {
         color: #FFFFFF;
         text-decoration: none;
         transition: color .2s linear;
+        font-size:20px;
+        padding-left: 27px;
+        padding-right: 27px;
     }
 
 
@@ -383,9 +405,10 @@ export default {
 
     .footer{
         padding-top: 45px;
-        padding-bottom: 68px;
+        padding-bottom: 65px;
         padding-left: 7%;
         padding-right: 7%;
+        margin: 0;
     }
 
     .footer_menu{
@@ -405,6 +428,7 @@ export default {
         margin: 0;
         display: flex;
         justify-content: flex-start;
+        margin: 0;
         /* align-items:center; */
         /* padding-left: 20px; */
         /* padding-right: 35% */
@@ -425,6 +449,14 @@ export default {
         padding-top: 12px;
         padding-bottom: 12px;
     }
+
+    .footer_menu_right__item:first-child{
+        padding-top: 0;    
+    }
+
+    .footer_menu_right__item:last-child{
+        padding-bottom: 0;    
+    }    
 
     .footer__logo{
         height: 34px;
@@ -461,6 +493,18 @@ export default {
         color: #FFFFFF;
     }
 
+    @font-face {
+        font-family: "GothamProRegular"; 
+        src: url("/fonts/GothamProRegular/GothamProRegular.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal; 
+    }  
+
+	@font-face {
+			font-family: "GothamProBold";
+			src: url("/fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
 
 </style>
-

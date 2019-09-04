@@ -26,7 +26,7 @@ export default {
       height: 800px;
     } 
    .StyleRoterViewBackgroundImg{
-      background-image: url('../img/service_STQA.svg');
+      background-image: url('../img/service_STQA.jpg');
       background-repeat: no-repeat;
       background-position: center;
    }

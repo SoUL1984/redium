@@ -26,7 +26,7 @@ export default {
       height: 800px;
     } 
    .StyleRoterViewBackgroundImg{
-      background-image: url('../img/service_WMD.svg');
+      background-image: url('../img/service_WMD.jpg');
       background-repeat: no-repeat;
       background-position: center;
    }
